@@ -1,7 +1,19 @@
 console.log("hello world"); // part of the web-browser...
+console.log('hello world') // no need for semi-colon, and use of single-quotes
 
+
+// initialising variables:
+var a;
+let b;
+
+// using the variables:
+a = 5;
+b = 6;
+let z = x + y;
+//console.log(z);
+
+// not so clean-code...
 function pairElement(str) {
-
   let arr = str.split("");
   let newArr = arr.map(x => {
     let shortString = x;
@@ -30,5 +42,4 @@ function pairElement(str) {
   //console.log(newArr); testing here... 
   return newArr;
 }
-
 pairElement("CTCTA"); // DNA pairing function, that pairs each DNA nucleotide with its respective nucleotide
