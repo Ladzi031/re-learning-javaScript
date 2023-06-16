@@ -63,22 +63,18 @@ function pairElement(str) {
         case "G":
         shortString += "C";
        return shortString.split("");
-        break;
   
         case "C":
         shortString += "G";
         return shortString.split("");
-        break;
   
         case "A":
         shortString += "T";
         return shortString.split("");
-        break;
   
         case "T":
         shortString += "A";
         return shortString.split("");
-        break;
       }
     })
     //console.log(newArr); testing here... 
