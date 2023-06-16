@@ -15,7 +15,6 @@ String trimEnd()
 String padStart()
 String padEnd()
 String charAt()
-String charCodeAt()
 String split()
 String indexOf()
 String lastIndexOf()
@@ -59,3 +58,30 @@ let shortId = idNumber.slice(0, 4);
 const maskedIdNumber = shortId.padEnd(idNumber.length, "*"); // parameter:1-> the length of the string, 2-> the filling-String
 console.log(maskedIdNumber); // results: "4242***************" first 4 digits 
 
+firstName.charAt(5); // returns the string at the index specified in the parameter
+
+let arr = firstName.split(""); // returns an String Array
+console.lot(arr.map((obj )=> {
+    console.log(obj);
+} )); 
+/* results: 
+'L'
+'a'
+'d'
+'z'
+'a'
+'n'
+'i' 
+*/
+
+console.log(firstName.indexOf("a")); // returns the index-value of the FIRST occurance of the letter "a"... (from LEFT to RIGHT)
+console.log(firstName.indexOf("a", 2)); // returns the index-values of the SECOND ocurance of the letter "a"...  (from LEFT to RIGHT)
+
+firstName.lastIndexOf("a");// returns the index-value of the FIRST occurance of the letter "a" from RIGHT to LEFT
+// firstName.lastIndexOf("a", 3); 
+
+firstName.startsWith("L"); //The startsWith() method determines whether a string begins with the characters of a specified string, returning true or false as appropriate.
+// results: true
+
+firstName.endsWith("i"); //The startsWith() method determines whether a string begins with the characters of a specified string, returning true or false as appropriate.
+// results: true
