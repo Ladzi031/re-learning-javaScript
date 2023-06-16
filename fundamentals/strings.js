@@ -49,3 +49,13 @@ firstName.concat(lastName); // results: "Ladzani farooq", simply joins two strin
 
 let test = " example ";
 console.log(test.trim()); // results: "example" removes empty spaces at the start of string and at the end;
+
+console.log(test.trimStart()); //results: "example "; removes empty spaces at the start of the string;
+console.log(test.trimEnd()); // results: " example"; removes empry spaces at the end of the string;
+
+
+let idNumber = "4242974027834072834";
+let shortId = idNumber.slice(0, 4);
+const maskedIdNumber = shortId.padEnd(idNumber.length, "*"); // parameter:1-> the length of the string, 2-> the filling-String
+console.log(maskedIdNumber); // results: "4242***************" first 4 digits 
+
