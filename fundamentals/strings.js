@@ -17,6 +17,10 @@ String padEnd()
 String charAt()
 String charCodeAt()
 String split()
+String indexOf()
+String lastIndexOf()
+String startsWith()
+Strign endsWith()
  */
 
 let firstName = "Ladzani";
@@ -35,3 +39,8 @@ firstName.replace(regex2, "b"); // results: Lbdzbni, works the same as replaceAl
 /*
 returns a new String with some or all the matches of a patttern(REGEX or STRING)
  */
+
+firstName.replaceAll(regex, "a"); // results: Lbdzbni... replaces all instances of the pattern, but with REGEX, IT must have a global-FLAG SPECIFIED! TO WORK
+/*
+
+*/
