@@ -41,6 +41,11 @@ returns a new String with some or all the matches of a patttern(REGEX or STRING)
  */
 
 firstName.replaceAll(regex, "a"); // results: Lbdzbni... replaces all instances of the pattern, but with REGEX, IT must have a global-FLAG SPECIFIED! TO WORK
-/*
 
-*/
+
+console.log(firstName.toUpperCase() +" "+ firstName.toLowerCase()) //results: "LADZANI ladzani";
+let lastName = " Farooq";
+firstName.concat(lastName); // results: "Ladzani farooq", simply joins two string together
+
+let test = " example ";
+console.log(test.trim()); // results: "example" removes empty spaces at the start of string and at the end;
