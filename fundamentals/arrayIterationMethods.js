@@ -5,6 +5,8 @@
   Array.reduce()
   Array.every()
   Array.some()
+  Array.from()
+  Array.entries()
  */
 
 const array1 = ['a', 'b', 'c'];
@@ -49,3 +51,20 @@ console.log(testCondition); // results: true;
 // Checks whether an element is even
 const even = (element) => element % 2 === 0;
 console.log(numbers1.some(even)); // results: true
+
+
+let test  = numbers1.entries(); // converts to an object
+for (const [index, element] of test) { // destructuring the object
+  console.log(index, element);
+}
+/*
+results:
+
+FORMAT:
+index element 
+0 45
+1 4
+2 9
+3 16
+4 25
+ */
