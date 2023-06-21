@@ -3,6 +3,7 @@
   Array.map()
   Array.filter()
   Array.reduce()
+  Array.every()
  */
 
 const array1 = ['a', 'b', 'c'];
@@ -36,3 +37,10 @@ numbers3.forEach(el => console.log(el)); // results: "45 \n 25"
 let intialValue = 0;
 let results = numbers1.reduce((accumulator,currentValue)=> accumulator + currentValue, intialValue);
 console.log(results); // results: 99
+
+const lessThanFifty = (value) => value < 50;
+
+
+// more like a universal quantifier...
+let testCondition = numbers1.every(lessThanFifty); // method takes in a callback function
+console.log(testCondition); // results: true;
