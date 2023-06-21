@@ -4,6 +4,7 @@
   Array.filter()
   Array.reduce()
   Array.every()
+  Array.some()
  */
 
 const array1 = ['a', 'b', 'c'];
@@ -44,3 +45,7 @@ const lessThanFifty = (value) => value < 50;
 // more like a universal quantifier...
 let testCondition = numbers1.every(lessThanFifty); // method takes in a callback function
 console.log(testCondition); // results: true;
+
+// Checks whether an element is even
+const even = (element) => element % 2 === 0;
+console.log(numbers1.some(even)); // results: true
