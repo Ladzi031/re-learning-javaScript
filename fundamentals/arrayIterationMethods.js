@@ -53,8 +53,8 @@ const even = (element) => element % 2 === 0;
 console.log(numbers1.some(even)); // results: true
 
 
-let test  = numbers1.entries(); // converts to an object
-for (const [index, element] of test) { // destructuring the object
+let test  = numbers1.entries(); // converts array to an object
+for (const [index, element] of test) { // destructuring the object...
   console.log(index, element);
 }
 /*
